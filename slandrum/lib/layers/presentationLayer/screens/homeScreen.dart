@@ -1,3 +1,4 @@
+import 'package:slandrum/layers/presentationLayer/screens/familyScreen.dart';
 import 'package:slandrum/main.dart';
 import 'package:flutter/material.dart';
 
@@ -10,9 +11,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
   final List<Widget> _children = [
-    Container(
-      color: Colors.red,
-    ),
+   FamilyScreen(),
     Container(
       color: Colors.blue,
     ),
