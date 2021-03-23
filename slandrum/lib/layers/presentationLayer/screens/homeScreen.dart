@@ -1,3 +1,4 @@
+import 'package:slandrum/layers/presentationLayer/screens/Rewards.dart';
 import 'package:slandrum/layers/presentationLayer/screens/familyScreen.dart';
 import 'package:slandrum/main.dart';
 import 'package:flutter/material.dart';
@@ -17,9 +18,8 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     Container(
       color: Colors.green,
-    ),  Container(
-      color: Colors.blue,
-    ),
+    ),  
+    Reward(),
     Container(
       color: Colors.green,
     )
@@ -41,14 +41,18 @@ class _HomeScreenState extends State<HomeScreen> {
           new BottomNavigationBarItem(
             icon: Image.asset("asset/family.png",height: 60,width:60),
           label: "Family",
+          
+          
           ),
          new BottomNavigationBarItem(
             icon: Image.asset("asset/Calendar.png",height: 60,width:60),
           label: "Calendar",
+         
           ),
          new BottomNavigationBarItem(
             icon: Image.asset("asset/task.png",height: 60,width:60),
           label: "Task",
+
           ),
             new BottomNavigationBarItem(
             icon: Image.asset("asset/task.png",height: 60,width:60),

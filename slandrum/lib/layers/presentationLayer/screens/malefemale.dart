@@ -29,7 +29,7 @@ class _MaleFemaleState extends State<MaleFemale> {
                          height: 80,
                          width: 80,
                         
-                 child:Text("Jnab")
+                 child:Text("Jnab",style: TextStyle(color: Colors.white),)
                ),
              ),
            ],
