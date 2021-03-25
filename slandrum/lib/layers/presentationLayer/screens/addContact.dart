@@ -39,8 +39,42 @@ class _AddContactState extends State<AddContact> {
                children:[
                Text("Information Via",style: TextStyle(color:Colors.black,fontSize:30),),
                Row(
+                 mainAxisAlignment: MainAxisAlignment.center,
                  children: [
-                Image.asset("asset/sms.png",height: 140,width: 140,),
+                Image.asset("asset/sms.png",height: 70,width: 70,),
+                                    Checkbox(  
+                      checkColor: Colors.greenAccent,  
+                      activeColor: Colors.red,  
+                      value: this.valuefirst,  
+                      onChanged: (bool value) {  
+                        setState(() {  
+                          this.valuefirst = value;  
+                        });  
+                      },  
+                    ),  
+                 
+
+               ],),
+            //      Row(
+            //        children: [
+            // Image.asset("asset/whatsapp.png",height: 140,width:140,),
+            //                         Checkbox(  
+            //           checkColor: Colors.greenAccent,  
+            //           activeColor: Colors.red,  
+            //           value: this.valuefirst,  
+            //           onChanged: (bool value) {  
+            //             setState(() {  
+            //               this.valuefirst = value;  
+            //             });  
+            //           },  
+            //         ),  
+                 
+
+            //    ],),
+                Row(
+                   mainAxisAlignment: MainAxisAlignment.center,
+                   children: [
+            Image.asset("asset/whatsapp.png",height: 70,width:70,),
                                     Checkbox(  
                       checkColor: Colors.greenAccent,  
                       activeColor: Colors.red,  
@@ -55,8 +89,9 @@ class _AddContactState extends State<AddContact> {
 
                ],),
                  Row(
+                   mainAxisAlignment: MainAxisAlignment.center,
                    children: [
-            Image.asset("asset/email.png",height: 140,width:140,),
+            Image.asset("asset/email.png",height: 70,width:70,),
                                     Checkbox(  
                       checkColor: Colors.greenAccent,  
                       activeColor: Colors.red,  
@@ -70,6 +105,7 @@ class _AddContactState extends State<AddContact> {
                  
 
                ],),
+
            
              ]),
 

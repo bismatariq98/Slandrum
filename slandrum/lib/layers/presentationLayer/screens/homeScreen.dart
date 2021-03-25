@@ -1,28 +1,30 @@
 import 'package:slandrum/layers/presentationLayer/screens/Rewards.dart';
+import 'package:slandrum/layers/presentationLayer/screens/calendar.dart';
 import 'package:slandrum/layers/presentationLayer/screens/familyScreen.dart';
+import 'package:slandrum/layers/presentationLayer/screens/task_screen.dart';
 import 'package:slandrum/main.dart';
 import 'package:flutter/material.dart';
 
-
+import 'package:lottie/lottie.dart';
 class HomeScreen extends StatefulWidget {
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMixin {
+
+
+
   int _currentIndex = 0;
   final List<Widget> _children = [
    FamilyScreen(),
-    Container(
-      color: Colors.blue,
-    ),
-    Container(
-      color: Colors.green,
-    ),  
+   Calendar(),
+  TaskScreen(),  
     Reward(),
-    Container(
-      color: Colors.green,
-    )
+  Lottie.network(
+                'https://assets2.lottiefiles.com/packages/lf20_zm15fbrh.json',
+                repeat: false
+           ),
   ];
 
   void onTabTapped(int index) {

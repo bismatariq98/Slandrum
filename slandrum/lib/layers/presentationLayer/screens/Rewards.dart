@@ -10,7 +10,8 @@ class Reward extends StatefulWidget {
 class _RewardState extends State<Reward> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return
+     Scaffold(
       backgroundColor: Color(0xFFE4EBEB),
       body: Container(
         height: Get.height,

@@ -25,6 +25,8 @@ dependencies:
     sdk: flutter
   get: ^3.26.0
   image_picker: ^0.7.2
+  lottie: ^1.0.1
+  table_calendar: ^2.1.0  
 
 
 
